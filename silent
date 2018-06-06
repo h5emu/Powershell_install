@@ -1,0 +1,1 @@
+Invoke-Command -Session $session -ScriptBlock { Start-Process -verb RunAs "msiexec.exe" -ArgumentList "/i c:\temp\airwatchagent.msi /quiet ENROLL=Y IMAGE=N SERVER=DeviceServicesFQDN LGName=OGID USERNAME=SingleUserStagingUser PASSWORD=password DEVICEOWNERSHIPTYPE=CD ASSIGNTOLOGGEDINUSER=Y" -Wait }
